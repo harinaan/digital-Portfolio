@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="HARICSS.css">
+     <style>
+             .seccon{
+                background-color:white;
+                padding:1.5rem; 
+                margin:5rem;
+                border-radius: 20px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+             }
+             .p{
+                font-size: x-large;
+             }
+
+             footer{
+                text-align: center;
+                padding: 1rem 0;
+                background-color: black;
+                color:#fff;
+             }
+
+             
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+        <div class="logo">
+            <h1>PORTFOLIO</h1>
+        </div>
+        <nav>
+           <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Qualification">Qualification</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+
+    
+        
+    <div class="details">
+            <h2 class="part1"> Hi.. I'm </h2>
+            <br>
+            <h1><span>Hariharan</span></h1>
+            <h2 class="part2"> B.SC Graduate</h2>
+            <br>
+            <p >This is my official Portfolio website to shows all
+                <br>Details and work Experience in Web Development.
+            </p>
+            <div class="prof">
+                
+                <img src="h1 (2).jpg"  alt="my picture" >
+                
+                
+            </div>
+            <a href="#">DOWNLOAD CV</a>
+
+           
+
+            
+            
+            <section id="about">
+                <div class="seccon">
+                    <h2>About</h2>
+                  <br>
+                    
+                    <P class="p">I'm Hariharan, currently pursuing my 3rd Year of B.SC Computer
+                        <br>Science. I have a strong passion for creating and developing
+                       web pages, and I'm proficient in programming languages such as c#
+                       , ASP.net, PHP, HTML with CSS and MYSql. I have a experience in react js 
+
+                    </P>
+
+                </div>
+            </section>
+             
+            <section id="Qualification">
+                <div class="seccon">
+                    <h2>Qualification</h2>
+                    <br>
+                    <P class="p">I have completed my schooling with 89%, and in College I have 8.6 CGPA 
+                        upto 4th semester. After completing B.SC I planning for do Masters.
+                    </P>
+                </div>
+            </section>
+            
+            <section id="skills">
+                <div class="seccon">
+                    <h2>Skills</h2>
+                    <br>
+                    <P class="p">I'm very skillfull in Decision-making, Project-planning, Task delegation,
+                        and Leading a Team
+                    </P>
+                </div>
+            </section>
+
+            <section id="projects">
+                <div class="seccon">
+                    <h2>PROJECTS</h2>
+                    <BR>
+                    <p class="p">I have completed various projects in react js. I have listed a projects below.</p>
+                    <ul>
+                        <li><a href="#">Project 1</a></li>
+                        <li><a href="#">Project 2</a></li>
+                        <li><a href="#">Project 3</a></li>
+
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+        <footer>
+            <p>&copy; 2023 Hariharan </p>
+        </footer>
+        
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click',function(e){
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href').substring(1);
+                    const  targetElement= document.getElementById(targetId);
+
+                    if(targetElement){
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behaviour:'smooth'
+                        });
+                    }
+                });
+            });
+        </script>
+
+    </body>
+</html>
